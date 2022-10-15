@@ -2,6 +2,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwCLP3FtIcbCL5SG2yIg2
 const form = document.forms['ice-coconut-jelly']
 const btnInput = document.querySelector(".btn-input")
 const btnLoading = document.querySelector(".btn-loading")
+const btnClose = document.querySelector(".btn-close")
 const alert = document.querySelector(".alert")
 const text = document.getElementById('text')
 
@@ -36,6 +37,9 @@ form.addEventListener('submit', e => {
 
             // ketika sukses dikirim tampilkan alert nya
             alert.classList.toggle("d-none")
+            btnClose.addEventListener('click', (e) => {
+                alert.classList.add("d-none")
+            })
 
             // reset form nya
             form.reset()
