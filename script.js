@@ -3,6 +3,18 @@ const form = document.forms['ice-coconut-jelly']
 const btnInput = document.querySelector(".btn-input")
 const btnLoading = document.querySelector(".btn-loading")
 const alert = document.querySelector(".alert")
+const text = document.getElementById('text')
+
+
+text.addEventListener("keyup", (e) => {
+    const value = e.currentTarget.value
+    btnInput.disabled = false;
+
+    if (value === "") {
+        btnInput.disabled = true;
+    }
+})
+
 
 form.addEventListener('submit', e => {
     e.preventDefault()
