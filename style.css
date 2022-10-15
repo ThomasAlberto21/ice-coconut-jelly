@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.title h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  color: #008000;
+}
+
+.nama-pembeli::placeholder {
+  color: black;
+}
+
+label {
+  color: #008000;
+  font-weight: 700;
+}
+
+.btn {
+  background-color: #008000;
+  color: white;
+}
+
+.btn-loading {
+  color: #008000;
+  border: 2px solid #008000;
+  background-color: white;
+}
+
+.btn:hover {
+  border: 2px solid #008000;
+  color: black;
+  transition: all 0.3s;
+}
+
+.btn:active {
+  border: 2px solid #008000;
+  color: black;
+  transition: all 0.3s;
+}
